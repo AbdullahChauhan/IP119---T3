@@ -1,0 +1,39 @@
+// ==================================
+// v a r i a b l e s
+
+$color-white: #fff;
+$color-black: #000;
+
+$color-gray-light: #eee;
+$color-gray: #ccc;
+$color-gray-dark: #222;
+$color-green: green;
+
+$color-primary: #2f86f7;
+
+// ==================================
+// r e s e t s
+
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+}
+
+body {
+    padding: 2rem;
+    box-sizing: border-box;
+    background-color: $color-gray;
+    font-family: "Roboto", "Helvetica", "Segoe UI";
+
+    /* width */
+    ::-webkit-scrollbar {
+        width: 8px;
+    }
+    /* Handle */
+    ::-webkit-scrollbar-thumb {
+        background: $color-gray;
+        border-radius: 10px;
+    }
+}

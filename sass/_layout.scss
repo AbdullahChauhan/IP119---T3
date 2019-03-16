@@ -1,0 +1,347 @@
+.container {
+    width: 350px;
+    height: 600px;
+    border-radius: 8px;
+    background-color: $color-white;
+    margin: auto;
+    box-shadow: 0 1rem 2rem rgba($color-black, 0.25);
+    position: relative;
+    overflow: visible;
+
+    display: flex;
+    flex-direction: column;
+
+    .nav {
+        max-width: 100%;
+        height: 45px;
+        padding: 8px 2px;
+        display: flex;
+        align-items: center;
+        background-color: $color-white;
+        border-bottom: 1px solid $color-gray;
+
+        .profile-box {
+            width: 150px;
+            height: 100%;
+            margin-right: auto;
+
+            display: grid;
+            grid-template-columns: 50px 100px;
+            grid-template-rows: 20px 15px;
+            align-items: center;
+
+            .profile-img {
+                grid-column: 1 / 2;
+                grid-row: 1 / span 2;
+                padding: 8px;
+                position: relative;
+
+                .status-signal {
+                    background-color: $color-green;
+                    width: 9px;
+                    height: 9px;
+                    border-radius: 50%;
+
+                    position: absolute;
+                    right: 12.5%;
+                    bottom: 12.5%;
+
+                    border: 2.5px solid $color-white;
+                }
+
+                img {
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                    display: block;
+                }
+            }
+
+            .profile-name {
+                font-weight: bold;
+            }
+
+            .profile-status {
+                font-size: 0.8rem;
+                color: darken($color-gray, 25%);
+            }
+        }
+
+        &-options {
+            li {
+                position: relative;
+                display: inline;
+                margin-right: 8px;
+
+                a {
+                    font-size: 1.3rem;
+                    color: $color-primary;
+                }
+
+                .tooltip-1 {
+                    display: none;
+                    position: absolute;
+                    width: 102px;
+                    top: -175%;
+                    left: -50%;
+                    padding: 4px;
+                    background-color: $color-gray-dark;
+                    z-index: 1111;
+                    color: $color-white;
+                    font-size: 0.8rem;
+                    border-radius: 4px;
+
+                    .triangle {
+                        width: 15px;
+                        height: 15px;
+                        background-color: $color-gray-dark;
+                        position: absolute;
+                        bottom: -50%;
+                        right: 75%;
+                        clip-path: polygon(50% 35%, 0% 100%, 100% 100%);
+                        transform: rotate(180deg);
+                        z-index: -111;
+                    }
+                }
+
+                .tooltip-2 {
+                    display: none;
+                    position: absolute;
+                    // width: 45px;
+                    top: -175%;
+                    left: -50%;
+                    padding: 4px;
+                    background-color: $color-gray-dark;
+                    z-index: 1111;
+                    color: $color-white;
+                    font-size: 0.8rem;
+                    border-radius: 4px;
+
+                    .triangle {
+                        width: 15px;
+                        height: 15px;
+                        background-color: $color-gray-dark;
+                        position: absolute;
+                        bottom: -50%;
+                        right: 40%;
+                        clip-path: polygon(50% 35%, 0% 100%, 100% 100%);
+                        transform: rotate(180deg);
+                        z-index: -111;
+                    }
+                }
+            }
+
+            .video-call,
+            .voice-call {
+                &:hover .tooltip-1 {
+                    display: block;
+                }
+            }
+
+            .options,
+            .close {
+                &:hover .tooltip-2 {
+                    display: block;
+                }
+            }
+
+            .options {
+                position: relative;
+
+                &:hover .settings {
+                    display: block;
+                }
+                .settings {
+                    display: none;
+                    position: absolute;
+                    width: 250px;
+                    height: 310px;
+                    background-color: $color-white;
+                    box-shadow: 0 0.5rem 1rem rgba($color-black, 0.25);
+                    top: 100%;
+                    left: 25%;
+
+                    ul {
+
+                        li {
+                            border-bottom: 1px solid $color-gray-light;
+                            padding: 8px 16px;
+                            margin: 0;
+                            display: block;
+
+                            a {
+                                color: $color-black;
+                                font-size: .9rem;
+
+                                i {
+                                    margin-right: 8px;
+                                    font-size: 1.25rem;
+                                }
+                            }
+
+                            &:hover {
+                                background-color: $color-gray-light;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .content {
+        overflow: scroll;
+        padding: 8px;
+
+        .message-receiver {
+            width: 100%;
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            margin-bottom: 4px;
+            position: relative;
+
+            .profile-img {
+                width: 35px;
+                height: 100%;
+                margin-right: 8px;
+
+                img {
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                }
+
+                &:hover::after {
+                    content: "Xer Can - 5 January 2019 at 09:44";
+                    display: block;
+                    border-radius: 8px;
+                    font-size: 0.8rem;
+                    height: 15px;
+                    padding: 8px;
+                    position: absolute;
+                    letter-spacing: 1px;
+                    top: 50%;
+                    left: 12.5%;
+                    transform: translateY(-50%);
+                    background-color: $color-gray-dark;
+                    color: $color-white;
+                }
+            }
+
+            .profile-message {
+                width: 60%;
+                background-color: $color-gray-light;
+                padding: 8px;
+                border-radius: 24px;
+                display: inline-block;
+                margin-right: 8px;
+            }
+
+            .options {
+                display: none;
+
+                a {
+                    color: $color-gray;
+                }
+            }
+
+            &:hover {
+                .options {
+                    display: inline-block;
+
+                    a {
+                        &:hover {
+                            color: $color-gray-dark;
+                        }
+                    }
+                }
+            }
+        }
+
+        .message-sender {
+            width: 100%;
+            margin-top: 8px;
+
+            .message {
+                width: 60%;
+                height: 100%;
+                background-color: $color-primary;
+                color: $color-white;
+                padding: 8px 16px;
+                float: right;
+                margin-bottom: 2px;
+
+                &:nth-child(odd) {
+                    border-radius: 24px 24px 0 24px;
+                }
+
+                &:nth-child(even) {
+                    border-radius: 24px 0 24px 24px;
+                    margin-bottom: 4px;
+                }
+            }
+        }
+    }
+
+    .input {
+        width: 100%;
+        height: 70px;
+        background-color: $color-white;
+        border-top: 1px solid $color-gray;
+
+        position: absolute;
+        bottom: 0;
+        right: 0;
+
+        display: grid;
+        grid-template-columns: repeat(8, 1fr) 50px;
+        grid-template-rows: 35px 30px;
+        align-items: center;
+        overflow: hidden;
+
+        &-message {
+            grid-column: 1 / -1;
+            grid-row: 1 / 2;
+
+            input {
+                width: 320px;
+                height: 100%;
+                padding: 4px 12px;
+                font-size: 0.85rem;
+                border: none;
+
+                &:focus {
+                    outline: none;
+                }
+            }
+        }
+
+        [class*="--"] {
+            &:not(:last-child) {
+                text-align: center;
+            }
+
+            a {
+                padding: 4px 12px;
+                font-size: 1.25rem;
+                color: darken($color-gray, 25%);
+            }
+
+            &:last-child {
+                text-align: right;
+                transition: all 0.3s;
+
+                &:hover {
+                    transform: scale(1.5);
+                }
+            }
+
+            &:hover {
+                a {
+                    color: $color-primary;
+                }
+            }
+        }
+    }
+}
