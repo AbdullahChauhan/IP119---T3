@@ -79,8 +79,8 @@ body {
         display: none;
         position: absolute;
         width: 102px;
-        top: -175%;
-        left: -50%;
+        top: -37.5px;
+        left: -10px;
         padding: 4px;
         background-color: #222;
         z-index: 1111;
@@ -100,8 +100,8 @@ body {
       .container .nav-options li .tooltip-2 {
         display: none;
         position: absolute;
-        top: -175%;
-        left: -50%;
+        top: -37.5px;
+        left: -12.5px;
         padding: 4px;
         background-color: #222;
         z-index: 1111;
@@ -168,6 +168,8 @@ body {
           width: 100%;
           height: 100%;
           object-fit: cover; }
+        .container .content .message-receiver .profile-img:hover ~ .options {
+          display: none; }
         .container .content .message-receiver .profile-img:hover::after {
           content: "Xer Can - 5 January 2019 at 09:44";
           display: block;
@@ -185,8 +187,8 @@ body {
       .container .content .message-receiver .profile-message {
         width: 60%;
         background-color: #eee;
-        padding: 8px;
-        border-radius: 24px;
+        padding: 8px 12px;
+        border-radius: 18px;
         display: inline-block;
         margin-right: 8px; }
       .container .content .message-receiver .options {
@@ -205,13 +207,13 @@ body {
         height: 100%;
         background-color: #2f86f7;
         color: #fff;
-        padding: 8px 16px;
+        padding: 8px 12px;
         float: right;
         margin-bottom: 2px; }
         .container .content .message-sender .message:nth-child(odd) {
-          border-radius: 24px 24px 0 24px; }
+          border-radius: 18px 18px 0 18px; }
         .container .content .message-sender .message:nth-child(even) {
-          border-radius: 24px 0 24px 24px;
+          border-radius: 18px 0 18px 18px;
           margin-bottom: 4px; }
   .container .input {
     width: 100%;

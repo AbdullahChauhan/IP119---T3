@@ -82,8 +82,8 @@
                     display: none;
                     position: absolute;
                     width: 102px;
-                    top: -175%;
-                    left: -50%;
+                    top: -37.5px;
+                    left: -10px;
                     padding: 4px;
                     background-color: $color-gray-dark;
                     z-index: 1111;
@@ -107,9 +107,8 @@
                 .tooltip-2 {
                     display: none;
                     position: absolute;
-                    // width: 45px;
-                    top: -175%;
-                    left: -50%;
+                    top: -37.5px;
+                    left: -12.5px;
                     padding: 4px;
                     background-color: $color-gray-dark;
                     z-index: 1111;
@@ -212,6 +211,10 @@
                     object-fit: cover;
                 }
 
+                &:hover ~ .options {
+                    display: none;
+                }
+
                 &:hover::after {
                     content: "Xer Can - 5 January 2019 at 09:44";
                     display: block;
@@ -232,8 +235,8 @@
             .profile-message {
                 width: 60%;
                 background-color: $color-gray-light;
-                padding: 8px;
-                border-radius: 24px;
+                padding: 8px 12px;
+                border-radius: 18px;
                 display: inline-block;
                 margin-right: 8px;
             }
@@ -268,16 +271,16 @@
                 height: 100%;
                 background-color: $color-primary;
                 color: $color-white;
-                padding: 8px 16px;
+                padding: 8px 12px;
                 float: right;
                 margin-bottom: 2px;
 
                 &:nth-child(odd) {
-                    border-radius: 24px 24px 0 24px;
+                    border-radius: 18px 18px 0 18px;
                 }
 
                 &:nth-child(even) {
-                    border-radius: 24px 0 24px 24px;
+                    border-radius: 18px 0 18px 18px;
                     margin-bottom: 4px;
                 }
             }
