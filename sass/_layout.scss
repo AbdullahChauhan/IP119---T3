@@ -1,5 +1,5 @@
 .container {
-    width: 350px;
+    width: 375px;
     height: 600px;
     border-radius: 8px;
     background-color: $color-white;
@@ -8,12 +8,9 @@
     position: relative;
     overflow: visible;
 
-    display: flex;
-    flex-direction: column;
-
     .nav {
         max-width: 100%;
-        height: 45px;
+        height: 40px;
         padding: 8px 2px;
         display: flex;
         align-items: center;
@@ -161,7 +158,6 @@
                     left: 25%;
 
                     ul {
-
                         li {
                             border-bottom: 1px solid $color-gray-light;
                             padding: 8px 16px;
@@ -170,7 +166,7 @@
 
                             a {
                                 color: $color-black;
-                                font-size: .9rem;
+                                font-size: 0.9rem;
 
                                 i {
                                     margin-right: 8px;
@@ -189,8 +185,10 @@
     }
 
     .content {
-        overflow: scroll;
+        overflow: auto;
         padding: 8px;
+        font-size: 0.9rem;
+        height: 450px;
 
         .message-receiver {
             width: 100%;
@@ -308,7 +306,7 @@
             grid-row: 1 / 2;
 
             input {
-                width: 320px;
+                width: 92.5%;
                 height: 100%;
                 padding: 4px 12px;
                 font-size: 0.85rem;

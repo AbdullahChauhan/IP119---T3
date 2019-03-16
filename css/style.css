@@ -18,19 +18,17 @@ body {
     border-radius: 10px; }
 
 .container {
-  width: 350px;
+  width: 375px;
   height: 600px;
   border-radius: 8px;
   background-color: #fff;
   margin: auto;
   box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.25);
   position: relative;
-  overflow: visible;
-  display: flex;
-  flex-direction: column; }
+  overflow: visible; }
   .container .nav {
     max-width: 100%;
-    height: 45px;
+    height: 40px;
     padding: 8px 2px;
     display: flex;
     align-items: center;
@@ -144,15 +142,17 @@ body {
           display: block; }
           .container .nav-options .options .settings ul li a {
             color: #000;
-            font-size: .9rem; }
+            font-size: 0.9rem; }
             .container .nav-options .options .settings ul li a i {
               margin-right: 8px;
               font-size: 1.25rem; }
           .container .nav-options .options .settings ul li:hover {
             background-color: #eee; }
   .container .content {
-    overflow: scroll;
-    padding: 8px; }
+    overflow: auto;
+    padding: 8px;
+    font-size: 0.9rem;
+    height: 450px; }
     .container .content .message-receiver {
       width: 100%;
       display: flex;
@@ -232,7 +232,7 @@ body {
       grid-column: 1 / -1;
       grid-row: 1 / 2; }
       .container .input-message input {
-        width: 320px;
+        width: 92.5%;
         height: 100%;
         padding: 4px 12px;
         font-size: 0.85rem;
