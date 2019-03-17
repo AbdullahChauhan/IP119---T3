@@ -1,6 +1,6 @@
 .container {
     width: 375px;
-    height: 550px;
+    height: 525px;
     border-radius: 16px;
     background-color: $color-white;
     margin: auto;
@@ -186,9 +186,9 @@
 
     .content {
         overflow: auto;
-        padding: 8px 12px;
+        padding: 8px 16px;
         font-size: 0.9rem;
-        height: 410px;
+        height: 380px;
 
         .message-receiver {
             width: 100%;
@@ -244,6 +244,7 @@
 
                 a {
                     color: $color-gray;
+                    font-size: 1rem;
                 }
             }
 
@@ -283,6 +284,16 @@
                 }
             }
         }
+
+        .seen-feature {
+            float: right;
+            color: darken($color-gray, 25%);
+
+            p {
+                margin-left: 4px;
+                float: right;
+            }
+        }
     }
 
     .input {
@@ -296,7 +307,7 @@
         right: 0;
 
         display: grid;
-        grid-template-columns: repeat(8, 1fr) 50px;
+        grid-template-columns: repeat(8, 1fr) 60px;
         grid-template-rows: 35px 30px;
         align-items: center;
         overflow: hidden;
