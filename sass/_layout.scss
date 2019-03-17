@@ -1,3 +1,9 @@
+#bottom-right {
+    position: absolute;
+    bottom: 0;
+    right: 15%;
+}
+
 .container {
     width: 375px;
     height: 525px;
@@ -193,10 +199,9 @@
         .message-receiver {
             width: 100%;
             display: flex;
-            flex-wrap: wrap;
-            align-items: center;
+            // align-items: flex-end;
             position: relative;
-            margin-bottom: 4px;
+            margin-bottom: 8px;
 
             .profile-img {
                 width: 35px;
@@ -239,12 +244,56 @@
                 margin-right: 6px;
             }
 
+            .profile-message-img {
+                width: 50%;
+                margin-right: 8px;
+                position: relative;
+
+                img {
+                    width: 100%;
+                    height: 200px;
+                    object-fit: cover;
+                }
+
+                .react {
+                    width: 37.5px;
+                    height: 20px;
+                    border-radius: 32px;
+                    background-color: $color-white;
+                    box-shadow: 0 .25rem .5rem rgba($color-black, 0.25);
+                    position: absolute;
+                    bottom: 0;
+                    right: -8px;
+                    padding: 2px;
+
+                    .emoji, .add {
+                        color: darken($color-gray, 25%);
+                    }
+
+                    .emoji {
+                        font-size: 1rem;
+                        margin-left: 4px;
+                    }
+
+                    .add {
+                        font-size: .5rem;
+                        position: absolute;
+                    }
+                }
+            }
+
             .options {
                 display: none;
+                margin: auto 0;
 
                 a {
                     color: $color-gray;
                     font-size: 1rem;
+
+                    img {
+                        width: 30px;
+                        filter: grayscale(100%);
+                    }
                 }
             }
 

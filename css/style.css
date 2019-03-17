@@ -17,6 +17,11 @@ body {
   body ::-webkit-scrollbar-thumb {
     background: #eee; }
 
+#bottom-right {
+  position: absolute;
+  bottom: 0;
+  right: 15%; }
+
 .container {
   width: 375px;
   height: 525px;
@@ -155,10 +160,8 @@ body {
     .container .content .message-receiver {
       width: 100%;
       display: flex;
-      flex-wrap: wrap;
-      align-items: center;
       position: relative;
-      margin-bottom: 4px; }
+      margin-bottom: 8px; }
       .container .content .message-receiver .profile-img {
         width: 35px;
         height: 100%;
@@ -190,11 +193,41 @@ body {
         border-radius: 0 18px 18px 0;
         display: inline-block;
         margin-right: 6px; }
+      .container .content .message-receiver .profile-message-img {
+        width: 50%;
+        margin-right: 8px;
+        position: relative; }
+        .container .content .message-receiver .profile-message-img img {
+          width: 100%;
+          height: 200px;
+          object-fit: cover; }
+        .container .content .message-receiver .profile-message-img .react {
+          width: 37.5px;
+          height: 20px;
+          border-radius: 32px;
+          background-color: #fff;
+          box-shadow: 0 0.25rem 0.5rem rgba(0, 0, 0, 0.25);
+          position: absolute;
+          bottom: 0;
+          right: -8px;
+          padding: 2px; }
+          .container .content .message-receiver .profile-message-img .react .emoji, .container .content .message-receiver .profile-message-img .react .add {
+            color: #8c8c8c; }
+          .container .content .message-receiver .profile-message-img .react .emoji {
+            font-size: 1rem;
+            margin-left: 4px; }
+          .container .content .message-receiver .profile-message-img .react .add {
+            font-size: .5rem;
+            position: absolute; }
       .container .content .message-receiver .options {
-        display: none; }
+        display: none;
+        margin: auto 0; }
         .container .content .message-receiver .options a {
           color: #ccc;
           font-size: 1rem; }
+          .container .content .message-receiver .options a img {
+            width: 30px;
+            filter: grayscale(100%); }
       .container .content .message-receiver:hover .options {
         display: inline-block; }
         .container .content .message-receiver:hover .options a:hover {
