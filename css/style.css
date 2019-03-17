@@ -1,3 +1,4 @@
+/* ================================= */
 * {
   margin: 0;
   padding: 0;
@@ -7,36 +8,34 @@
 body {
   padding: 2rem;
   box-sizing: border-box;
-  background-color: #ccc;
+  background-color: #eee;
   font-family: "Roboto", "Helvetica", "Segoe UI";
   /* width */
   /* Handle */ }
   body ::-webkit-scrollbar {
-    width: 8px; }
+    width: 6px; }
   body ::-webkit-scrollbar-thumb {
-    background: #ccc;
-    border-radius: 10px; }
+    background: #eee; }
 
 .container {
   width: 375px;
-  height: 600px;
-  border-radius: 8px;
+  height: 550px;
+  border-radius: 16px;
   background-color: #fff;
   margin: auto;
-  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.25);
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.4);
   position: relative;
   overflow: visible; }
   .container .nav {
     max-width: 100%;
     height: 40px;
-    padding: 8px 2px;
+    border-radius: 16px 16px 0 0;
+    padding: 8px 4px;
     display: flex;
     align-items: center;
-    background-color: #fff;
     border-bottom: 1px solid #ccc; }
     .container .nav .profile-box {
       width: 150px;
-      height: 100%;
       margin-right: auto;
       display: grid;
       grid-template-columns: 50px 100px;
@@ -150,16 +149,16 @@ body {
             background-color: #eee; }
   .container .content {
     overflow: auto;
-    padding: 8px;
+    padding: 8px 12px;
     font-size: 0.9rem;
-    height: 450px; }
+    height: 410px; }
     .container .content .message-receiver {
       width: 100%;
       display: flex;
       flex-wrap: wrap;
       align-items: center;
-      margin-bottom: 4px;
-      position: relative; }
+      position: relative;
+      margin-bottom: 4px; }
       .container .content .message-receiver .profile-img {
         width: 35px;
         height: 100%;
@@ -188,9 +187,9 @@ body {
         width: 60%;
         background-color: #eee;
         padding: 8px 12px;
-        border-radius: 18px;
+        border-radius: 0 18px 18px 0;
         display: inline-block;
-        margin-right: 8px; }
+        margin-right: 6px; }
       .container .content .message-receiver .options {
         display: none; }
         .container .content .message-receiver .options a {
@@ -201,20 +200,23 @@ body {
           color: #222; }
     .container .content .message-sender {
       width: 100%;
-      margin-top: 8px; }
+      margin-bottom: 4px; }
+      .container .content .message-sender::after {
+        content: "";
+        display: table;
+        clear: both; }
       .container .content .message-sender .message {
         width: 60%;
         height: 100%;
         background-color: #2f86f7;
         color: #fff;
         padding: 8px 12px;
-        float: right;
-        margin-bottom: 2px; }
+        margin-bottom: 2px;
+        float: right; }
         .container .content .message-sender .message:nth-child(odd) {
           border-radius: 18px 18px 0 18px; }
         .container .content .message-sender .message:nth-child(even) {
-          border-radius: 18px 0 18px 18px;
-          margin-bottom: 4px; }
+          border-radius: 18px 0 18px 18px; }
   .container .input {
     width: 100%;
     height: 70px;

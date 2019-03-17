@@ -11,6 +11,17 @@ $color-green: green;
 
 $color-primary: #2f86f7;
 
+/* ================================= */
+// Mixins
+
+@mixin clearfix {
+    &::after {
+        content: "";
+        display: table;
+        clear: both;
+    }
+}
+
 // ==================================
 // r e s e t s
 
@@ -24,16 +35,15 @@ $color-primary: #2f86f7;
 body {
     padding: 2rem;
     box-sizing: border-box;
-    background-color: $color-gray;
+    background-color: $color-gray-light;
     font-family: "Roboto", "Helvetica", "Segoe UI";
 
     /* width */
     ::-webkit-scrollbar {
-        width: 8px;
+        width: 6px;
     }
     /* Handle */
     ::-webkit-scrollbar-thumb {
-        background: $color-gray;
-        border-radius: 10px;
+        background: $color-gray-light;
     }
 }
