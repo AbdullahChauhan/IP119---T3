@@ -274,6 +274,34 @@
                         font-size: 0.5rem;
                         position: absolute;
                     }
+
+                    .react-adv {
+                        display: none;
+                        position: absolute;
+                        top: -50px;
+                        left: -150px;
+                        width: 300px;
+                        background-color: $color-white;
+                        padding: $small-2;
+                        box-shadow: 0 .5rem 1rem rgba($color-black, 0.25);
+                        border-radius: $x-large;
+
+
+                        a {
+                            display: inline-block;
+                            width: 35px;
+                            height: 35px;
+
+                            img {
+                                width: 90%;
+                                height: 90%;
+                            }
+                        }
+                    }
+
+                    &:hover .react-adv {
+                        display: block;
+                    }
                 }
             }
 

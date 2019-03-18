@@ -217,6 +217,25 @@ body {
           .container .content .message-receiver .profile-message-img .react .add {
             font-size: 0.5rem;
             position: absolute; }
+          .container .content .message-receiver .profile-message-img .react .react-adv {
+            display: none;
+            position: absolute;
+            top: -50px;
+            left: -150px;
+            width: 300px;
+            background-color: #fff;
+            padding: 4px;
+            box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.25);
+            border-radius: 32px; }
+            .container .content .message-receiver .profile-message-img .react .react-adv a {
+              display: inline-block;
+              width: 35px;
+              height: 35px; }
+              .container .content .message-receiver .profile-message-img .react .react-adv a img {
+                width: 90%;
+                height: 90%; }
+          .container .content .message-receiver .profile-message-img .react:hover .react-adv {
+            display: block; }
       .container .content .message-receiver .options {
         display: none;
         margin: auto 0; }
