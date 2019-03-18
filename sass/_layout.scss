@@ -221,17 +221,18 @@
                 &:hover::after {
                     content: "Xer Can - 5 January 2019 at 09:44";
                     display: block;
-                    border-radius: 8px;
+                    border-radius: 4px;
                     font-size: 0.8rem;
                     height: 15px;
                     padding: 8px;
                     position: absolute;
                     letter-spacing: 1px;
-                    top: 50%;
-                    left: 12.5%;
+                    top: 16px;
+                    left: 12%;
                     transform: translateY(-50%);
                     background-color: $color-gray-dark;
                     color: $color-white;
+                    z-index: 99999;
                 }
             }
 
