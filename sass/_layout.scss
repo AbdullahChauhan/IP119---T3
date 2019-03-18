@@ -189,6 +189,13 @@
         font-size: 0.9rem;
         height: 380px;
 
+        .date {
+            text-align: center;
+            font-size: .8rem;
+            margin-bottom: $medium;
+            color: $color-gray;
+        }
+
         .message-receiver {
             width: 100%;
             display: flex;
