@@ -11,15 +11,16 @@ $color-green: green;
 
 $color-primary: #2f86f7;
 
-$border-radius-small: 2px;
-$border-radius-small-2: 4px;
-$border-radius-medium: 8px;
-$border-radius-medium-2: 10px;
-$border-radius-large: 16px;
-$border-radius-large-2: 18px;
-$border-radius-x-large: 32px;
-$border-radius-half: 50%;
+$small: 2px;
+$small-2: 4px;
+$medium: 8px;
+$medium-2: 12px;
+$large: 16px;
+$large-2: 18px;
+$x-large: 32px;
+$half: 50%;
 
+$color-darken-25: darken($color-gray, 25%);
 
 /* ================================= */
 // Mixins
