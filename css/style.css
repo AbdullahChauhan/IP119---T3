@@ -78,18 +78,20 @@ body {
       .container .nav-options li a {
         font-size: 1.3rem;
         color: #2f86f7; }
-      .container .nav-options li .tooltip-1 {
+      .container .nav-options li .tooltip-1,
+      .container .nav-options li .tooltip-2 {
         display: none;
         position: absolute;
-        width: 102px;
-        top: -37.5px;
-        left: -10px;
         padding: 4px;
         background-color: #222;
         z-index: 1111;
         color: #fff;
         font-size: 0.8rem;
         border-radius: 4px; }
+      .container .nav-options li .tooltip-1 {
+        width: 102px;
+        top: -37.5px;
+        left: -10px; }
         .container .nav-options li .tooltip-1 .triangle {
           width: 15px;
           height: 15px;
@@ -101,16 +103,8 @@ body {
           transform: rotate(180deg);
           z-index: -111; }
       .container .nav-options li .tooltip-2 {
-        display: none;
-        position: absolute;
         top: -37.5px;
-        left: -12.5px;
-        padding: 4px;
-        background-color: #222;
-        z-index: 1111;
-        color: #fff;
-        font-size: 0.8rem;
-        border-radius: 4px; }
+        left: -12.5px; }
         .container .nav-options li .tooltip-2 .triangle {
           width: 15px;
           height: 15px;
