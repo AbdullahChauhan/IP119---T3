@@ -355,12 +355,13 @@
                 padding: $medium $medium-2;
                 margin-bottom: $small;
                 float: right;
+                border-radius: $large-2 0 0 $large-2;
 
-                &:nth-child(odd) {
+                &:first-child {
                     border-radius: $large-2 $large-2 0 $large-2;
                 }
 
-                &:nth-child(even) {
+                &:last-child {
                     border-radius: $large-2 0 $large-2 $large-2;
                 }
             }
@@ -382,10 +383,6 @@
         height: 70px;
         background-color: $color-white;
         border-top: 1px solid $color-gray;
-
-        position: absolute;
-        bottom: 0;
-        right: 0;
 
         display: grid;
         grid-template-columns: repeat(8, 1fr) 60px;
