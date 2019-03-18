@@ -11,6 +11,16 @@ $color-green: green;
 
 $color-primary: #2f86f7;
 
+$border-radius-small: 2px;
+$border-radius-small-2: 4px;
+$border-radius-medium: 8px;
+$border-radius-medium-2: 10px;
+$border-radius-large: 16px;
+$border-radius-large-2: 18px;
+$border-radius-x-large: 32px;
+$border-radius-half: 50%;
+
+
 /* ================================= */
 // Mixins
 
@@ -20,6 +30,12 @@ $color-primary: #2f86f7;
         display: table;
         clear: both;
     }
+}
+
+@mixin toBottomRight {
+    position: absolute;
+    bottom: 0;
+    right: 15%;
 }
 
 // ==================================

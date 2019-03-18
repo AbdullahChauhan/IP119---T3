@@ -32,12 +32,10 @@ body {
   background-color: #fff;
   margin: auto;
   box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.4);
-  position: relative;
-  overflow: visible; }
+  position: relative; }
   .container .nav {
     max-width: 100%;
     height: 40px;
-    border-radius: 16px 16px 0 0;
     padding: 8px 4px;
     display: flex;
     align-items: center;
@@ -195,7 +193,7 @@ body {
         width: 60%;
         background-color: #eee;
         padding: 8px 12px;
-        border-radius: 0 18px 18px 0;
+        border-radius: 0 16px 16px 0;
         display: inline-block;
         margin-right: 6px; }
       .container .content .message-receiver .profile-message-img {
@@ -216,13 +214,14 @@ body {
           bottom: 0;
           right: -8px;
           padding: 2px; }
-          .container .content .message-receiver .profile-message-img .react .emoji, .container .content .message-receiver .profile-message-img .react .add {
+          .container .content .message-receiver .profile-message-img .react .emoji,
+          .container .content .message-receiver .profile-message-img .react .add {
             color: #8c8c8c; }
           .container .content .message-receiver .profile-message-img .react .emoji {
             font-size: 1rem;
             margin-left: 4px; }
           .container .content .message-receiver .profile-message-img .react .add {
-            font-size: .5rem;
+            font-size: 0.5rem;
             position: absolute; }
       .container .content .message-receiver .options {
         display: none;
